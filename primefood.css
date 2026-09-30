@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://files.catbox.moe/03i14y.jpg");
+    background-size: cover;
+   
+    
+}
+@keyframes float {
+    from{background-position: 0 0 ;}
+    to{background-position: 100% 100%;}
+}
+section{
+    padding: 45px;
+    background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    width: 500px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 15px 25px 55px rgba(0, 0, 0, 0.5);
+}
+header img{
+    width: 150px;
+    margin: auto;
+    border-radius: 150px;
+           
+}
+header h3{
+    color: #000000;
+    font-size: 1.35rem;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+main a{
+    background:  #a62125;
+    padding: 15px 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+        
+}
+main a:hover{
+    opacity: .85;
+}
+
+@media (max-width: 520px){
+    section{
+        width: 90%;
+        padding: 30px;
+    }
+    header img{
+        width: 100px;
+    }
+    header h3{
+        font-size: 1.5rem;
+    }
+    main{
+        gap: 15px;
+    }
+    main a{
+        padding: 15px 0;
+        
+    }
+}
